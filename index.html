@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+  <link rel="stylesheet" href="css/style.css">
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navbar Start ===== -->
+  <nav class="navbar">
+    <div class="container justify-content-center">
+      <div class="row justify-content-between align-items-center">
+        <div class="logo">
+          <img src="images/logo-bookmark.svg" alt="">
+        </div>
+        <div class="btn-menu">
+          <ion-icon name="menu-outline"></ion-icon>
+        </div>
+        <div class="menu">
+          <div class="logo-menu">
+            <img src="images/logo-bookmark copy 3.svg" alt="">
+            <img class="btn-close" src="images/icon-close.svg" alt="">
+          </div>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Login</a></li>
+          </ul>
+          <div class="social-link">
+            <a href=""><img onmouseenter="hoverIndexTwo()" src="images/icon-facebook.svg" alt=""></a>
+            <a href=""><img onmouseenter="hoverIndexThree()" src="images/icon-twitter.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- ===== Navbar End ===== -->
+  <!-- ===== Header Section Start ===== -->
+  <section class="header-section" id="header">
+    <div class="container justify-content-center">
+      <div class="row justify-content-between align-items-center">
+        <div class="header-text">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites. Open a new 
+            browser tab and see your sites load instantly. Try it for free.
+          </p>
+              <a href="">Get it on Chrome</a>
+              <a class="w-50" href="">Get it on Firefox</a>
+        </div>
+        <div class="header-img">
+          <img src="images/illustration-hero.svg" alt="">
+          <div class="header-shapes"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Header Section End ===== -->
+  <!-- ===== Features Section Start ===== -->
+  <section class="features-section" id="features">
+    <div class="container justify-content-center">
+      <div class="row justify-content-between align-items-center">
+        <div class="title">
+          <h1>Features</h1>
+          <p>
+            Our aim is to make it quick and easy for you to access your favourite websites. 
+            Your bookmarks sync between your devices so you can access them on the go.
+          </p>
+        </div>
+        <ul class="show">
+          <li><a class="team-link active" data-name="bookmarking" href="">Simple Bookmarking</a></li>
+          <li><a class="team-link" data-name="searching" href="">Speedy Searching</a></li>
+          <li><a class="team-link" data-name="sharing" href="">Easy Sharing</a></li>
+        </ul>
+        <div class="shapes"></div>
+        <div class="content">
+          <div class="content-features" data-name="bookmarking">
+            <div class="box-img">
+              <img src="images/illustration-features-tab-1.svg" alt="">
+            </div>
+            <div class="text-box">
+              <div class="text-content">
+                <h1>Bookmark in one click</h1>
+                <p>
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.
+                </p>
+                <div class="link">
+                  <a href="">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-features" id="active" data-name="searching">
+            <div class="box-img">
+              <img class="img" src="images/illustration-features-tab-2.svg" alt="">
+            </div>
+            <div class="text-box">
+              <div class="text-content">
+                <h1>Bookmark in one click</h1>
+                <p>
+                  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                  gives you complete control over how you manage your favourite sites.
+                </p>
+                <div class="link">
+                  <a href="">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-features" id="active"  data-name="sharing">
+            <div class="box-img">
+              <!-- <div class="shapes"></div> -->
+              <img class="img" src="images/illustration-features-tab-3.svg" alt="">
+            </div>
+            <div class="text-box">
+              <div class="text-content">
+                <h1>Intelligent search</h1>
+                <p>
+                  Our powerful search feature will help you find saved sites in no time at all. 
+                  No need to trawl through all of your bookmarks.
+                </p>
+                <div class="link">
+                  <a href="">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== Features Section End ===== -->
+  <!-- ===== extension Section Start ===== -->
+  <section class="extension-section" id="pricing">
+    <div class="container justify-content-center">
+      <div class="row justify-content-center align-items-center">
+        <div class="title">
+          <h1>Download the extension</h1>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+            got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <div class="content">
+          <div class="box-content w-1">
+            <img src="images/logo-chrome.svg" alt="">
+            <h1>Add to Chrome</h1>
+            <p>Minimum version 62</p>
+            <div class="dotted">
+              <img src="images/bg-dots.svg" alt="">
+            </div>
+            <div class="link">
+              <a href="">Add & Install Extension</a>
+            </div>
+          </div>
+          <div class="box-content w-2">
+            <img src="images/logo-firefox.svg" alt="">
+            <h1>Add to Firefox</h1>
+            <p>Minimum version 55</p>
+            <div class="dotted">
+              <img src="images/bg-dots.svg" alt="">
+            </div>
+            <div class="link">
+              <a href="">Add & Install Extension</a>
+            </div>
+          </div>
+          <div class="box-content w-3">
+            <img src="images/logo-opera.svg" alt="">
+            <h1>Add to Opera</h1>
+            <p>Minimum version 46</p>
+            <div class="dotted">
+              <img src="images/bg-dots.svg" alt="">
+            </div>
+            <div class="link">
+              <a href="">Add & Install Extension</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== extension Section End ===== -->
+  <!-- ===== questions Section start ===== -->
+  <section class="questions-section" id="contact">
+    <div class="container justify-content-center">
+      <div class="row justify-content-between align-items-center">
+        <div class="title">
+          <h1>Frequently Asked Questions</h1>
+          <p>
+            Here are some of our FAQs. If you have any other questions you’d like 
+            answered please feel free to email us.
+          </p>
+        </div>
+        <div class="content">
+          <div class="content-question">
+            <!-- Question 1 -->
+            <div class="question" data-num="num-1">
+              <h3>What is Bookmark?</h3>
+              <div class="img">
+                <img src="images/icon-arrow.svg" alt="" data-num="num-1">
+              </div>
+            </div>
+            <!-- Answer 1 -->
+            <div class="answer active" data-num="num-1">
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+              justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+              </p>
+            </div>
+          </div>
+          <div class="content-question">
+            <!-- Question 2 -->
+            <div class="question" data-num="num-2">
+              <h3>How can I request a new browser?</h3>
+              <div class="img">
+                <img src="images/icon-arrow.svg" alt="" data-num="num-2">
+              </div>
+            </div>
+            <!-- Answer 2 -->
+            <div class="answer active" data-num="num-2">
+              <p>
+              Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+              Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+              ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+              Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+              </p>
+            </div>
+          </div>
+          <div class="content-question">
+            <!-- Question 3 -->
+            <div class="question" data-num="num-3">
+              <h3>Is there a mobile app?</h3>
+              <div class="img">
+                <img src="images/icon-arrow.svg" alt="" data-num="num-3">
+              </div>
+            </div>
+            <!-- Answer 3 -->
+            <div class="answer active" data-num="num-3">
+              <p>
+              Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+              urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+              sollicitudin ex et ultricies bibendum.
+              </p>
+            </div>
+          </div>
+          <div class="content-question w-4">
+            <!-- Question 4 -->
+            <div class="question" data-num="num-4">
+              <h3>What about other Chromium browsers?</h3>
+              <div class="img">
+                <img src="images/icon-arrow.svg" alt="" data-num="num-4">
+              </div>
+            </div>
+            <!-- Answer 4 -->
+            <div class="answer active" data-num="num-4">
+              <p>
+                Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                vitae neque eget nisl gravida pellentesque non ut velit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="link">
+          <a href="">More Info</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== questions Section End ===== -->
+  <!-- ===== footer Section start ===== -->
+  <footer class="footer" id="login">
+    <div class="container justify-content-center">
+      <div class="row align-items-center">
+        <div class="contact-footer">
+          <p>35,000+ already joined</p>
+          <h1>Stay up-to-date with what we’re doing</h1>
+          <form action="">
+            <div class="input">
+              <input id="input-email" type="text" placeholder="Enter your email address" oninput="red()">
+              <span>whoops, make sure it's on email</span>
+            </div>
+            <div class="btn-submit">
+              <input id="submit" type="submit" value="Contact us">
+            </div>
+          </form>
+        </div>
+        <div class="footer-bg">
+        <div class="footer-link">
+          <ul>
+            <li class="item-img ">
+              <a class="svg" href="">
+                <img onmouseenter="hoverIndexOne()" src="images/logo-bookmark copy.svg" alt="">
+              </a>
+            </li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="social-link">
+            <a href=""><img onmouseenter="hoverIndexTwo()" src="images/icon-facebook.svg" alt=""></a>
+            <a href=""><img onmouseenter="hoverIndexThree()" src="images/icon-twitter.svg" alt=""></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ===== footer Section End ===== -->
+  
+  
+  
+  
+  
+<!-- 
+  A Simple Bookmark Manager
+
+  A clean and simple interface to organize your favourite websites. Open a new 
+  browser tab and see your sites load instantly. Try it for free.
+
+  Get it on Chrome
+  Get it on Firefox
+
+  Features
+
+  Our aim is to make it quick and easy for you to access your favourite websites. 
+  Your bookmarks sync between your devices so you can access them on the go.
+
+  Simple Bookmarking
+  Speedy Searching
+  Easy Sharing
+
+  Bookmark in one click
+
+  Organize your bookmarks however you like. Our simple drag-and-drop interface 
+  gives you complete control over how you manage your favourite sites.
+
+  More Info
+
+  Intelligent search
+
+  Our powerful search feature will help you find saved sites in no time at all. 
+  No need to trawl through all of your bookmarks.
+
+  More Info
+
+  Share your bookmarks
+
+  Easily share your bookmarks and collections with others. Create a shareable 
+  link that you can send at the click of a button.
+
+  More Info
+
+  Download the extension
+
+  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+  got a favourite you’d like us to prioritize.
+
+  Add to Chrome
+  Minimum version 62
+  Add & Install Extension
+
+  Add to Firefox
+  Minimum version 55
+  Add & Install Extension
+
+  Add to Opera
+  Minimum version 46
+  Add & Install Extension
+
+  Frequently Asked Questions
+  
+  Here are some of our FAQs. If you have any other questions you’d like 
+  answered please feel free to email us.
+
+  <!-- Question 1 -->
+  <!-- What is Bookmark? -->
+
+  <!-- Answer 1 -->
+  <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis. -->
+
+  <!-- Question 2 -->
+  <!-- How can I request a new browser? -->
+
+  <!-- Answer 2 -->
+  <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+  ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+  Mauris augue massa, ultricies non ligula. Suspendisse imperdiet. -->
+
+  <!-- Question 3 -->
+  <!-- Is there a mobile app? -->
+
+  <!-- Answer 3 -->
+  <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum  -->
+  <!-- urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+  sollicitudin ex et ultricies bibendum. -->
+
+  <!-- Question 4 -->
+  <!-- What about other Chromium browsers? -->
+
+  <!-- Answer 4 -->
+  <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam  -->
+  <!-- vitae neque eget nisl gravida pellentesque non ut velit. -->
+<!--  -->
+  <!-- More Info -->
+
+  <!--35,000+ already joined
+
+  Stay up-to-date with what we’re doing
+
+  Contact Us
+
+  Features
+  Pricing
+  Contact
+   -->
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
